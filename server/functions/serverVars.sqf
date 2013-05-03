@@ -445,7 +445,8 @@ vehicleWeapons = [
 				"Makarov"
 				];
 
-vehicleAddition = [
+//Attachments
+vehicleAddition0 = [
 			"Zasleh2",
 			"muzzle_snds_H",
 			"muzzle_snds_L",
@@ -458,17 +459,48 @@ vehicleAddition = [
 			"optic_Holosight", 
 			"acc_flashlight", 
 			"acc_pointer_IR",
-			"Medikit",
+			// "Medikit",
             "FirstAidKit",
-            "ToolKit",
+            // "ToolKit",
 			"Binocular",
 			"ItemGPS",
 			"NVGoggles"
 ];
 
-vehicleAddition2 = [
+// Random
+vehicleAddition1 = [
 	"Chemlight_blue",
-	"Chemlight_green"
+	"Chemlight_green",
+	"Chemlight_red",
+	"Chemlight_yellow",
+// Flares
+	"FlareGreen_F",
+	"FlareRed_F",
+	"FlareWhite_F",
+	"FlareYellow_F",
+	"UGL_FlareCIR_F",
+	"UGL_FlareWhite_F",
+	"Mine",
+// ARMA 2 
+	"1Rnd_HE_Grenade_shell",
+	"HandGrenade",
+	"MiniGrenade",
+	"SmokeShell",
+	"SmokeShellYellow",
+	"SmokeShellRed",
+	"SmokeShellGreen",
+	"SmokeShellPurple",
+	"SmokeShellBlue"			
+];
+
+vehicleExplosive = [
+// ARMA 3 EXPLOSIVES
+	"APERSBoundingMine_Range_Mag",
+	"ATMine_Range_Mag",
+	"APERSMine_Range_Mag",
+	"APERSTripMine_Wire_Mag",
+	"SLAMDirectionalMine_Wire_Mag",
+	"SatchelCharge_Remote_Mag"
 ];
  
                 

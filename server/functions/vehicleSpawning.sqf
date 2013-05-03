@@ -7,13 +7,13 @@
 if(!X_Server) exitWith {};
 
 private ["_counter","_pos","_type","_num","_markerName","_marker","_amountOfVehicles","_hint"];
-
+_type = 0;
 _counter = 0;
 
 for "_i" from 1 to 120 do
 {
 	_pos = getMarkerPos format ["vehicleSpawn_%1", _i];
-	_type = 0;
+
     _num = floor (random 100);
 	if (_num < 100) then {_type = 0;};
 	if (_num < 35) then {_type = 1;};

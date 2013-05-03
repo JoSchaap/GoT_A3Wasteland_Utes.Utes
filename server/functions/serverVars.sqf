@@ -96,8 +96,7 @@ vehicleTier1 = [
 	"UralCivil",
 	"UralCivil2",
 	"Ural_UN_EP1",
-	"Ural_TK_CIV_EP1"];
-	
+	"Ural_TK_CIV_EP1"];	
 
 //Military Vehicle List - Random Spawns
 vehicleTier2 = [
@@ -130,7 +129,7 @@ vehicleTier3 = [
 	"GAZ_Vodnik"];
                             
 //Object List - Random Spawns.
-objectList = [			
+objectTier0 = [
 // ARMA 3 ITEMS
 	"Land_HBarrier_1_F",
 	"Land_HBarrier_3_F",
@@ -141,26 +140,6 @@ objectList = [
 	"Land_HBarrier1",
 	"Land_HBarrier3",
 	"Land_HBarrier5",
-	"Base_WarfareBBarrier10xTall",
-	"Base_WarfareBBarrier10x",
-	"Base_WarfareBBarrier5x",
-// BAGFENCE			
-	"Land_fort_bagfence_long",
-	"Land_fort_bagfence_round",
-	"Land_fort_bagfence_corner",
-	"Land_BagFenceLong",
-	"Land_BagFenceEnd",
-	"Land_BagFenceRound",
-	"Land_BagFenceShort",			
-// BUNKERS			
-	"Land_Fort_Watchtower_EP1", //bunker tower
-	"Land_Fort_Watchtower", 
-	"WarfareBDepot",
-	"WarfareBCamp", 			
-// NESTS
-	"Land_fortified_nest_small_EP1",
-	"Land_fortified_nest_big",
-	"Land_fortified_nest_small",			
 // ROADBLOCK
 	"Hedgehog",
 	"Hhedgehog_concrete", // dragon teeth
@@ -199,43 +178,19 @@ objectList = [
 	"Fence_Ind_long", // fence with stone beams
 	"Fort_StoneWall_EP1", // low stone wall
 	"Wall_L_2m5_EP1", // takistani sand wall
-// LADDERS
-	// "Land_ladder_half_EP1",
-	// "Land_ladderEP1",	
-	"Land_ladder_half",
-	"Land_ladder",			
-	"Land_leseni2x", // two story scaffolding
-	"Land_leseni4x", // four story scaffolding
-	"Land_Misc_Scaffolding",
-	"Land_Climbing_Obstacle", // two side climbing
-// CAMO NETS
-	"Land_CamoNet_NATO",
-	// "Land_CamoNet_NATO_EP1",
-	"Land_CamoNetB_EAST_EP1",
-	"Land_CamoNetVar_EAST_EP1",			
 // SEARCHLIGHTS			
 	"SearchLight", 
 	// "SearchLight_CDF",
 	// "SearchLight_Gue",
 	"SearchLight_UN_EP1",
-// DIRTS
-	"Dirtmount_EP1", // bumpy dirt hump
-	"Land_Dirthump01_EP1",
-	"Land_Dirthump02_EP1",
-	"Land_Dirthump03_EP1",
-	// "Land_Dirthump01",
-	// "Land_Dirthump02",
-	// "Land_Dirthump03",
-	// "HumpsDirt", // bumpy dirt hump			
 // TRAINING ITEM
 	"Land_prebehlavka", // wooden bridge training item
 	"Land_prolejzacka", // wooden window training item
 	"Land_WoodenRamp", // small wooden ramp
 // HELI PAD
-	"HeliHCivil", // heli pad yellow
-	"HeliH", // heli pad white
+	// "HeliHCivil", // heli pad yellow
+	// "HeliH", // heli pad white
 	// "HeliHRescue", // heli medevac pad
-
 // MISC			
 	"Land_MetalBarrel_F",
 	"Land_Misc_ConcPipeline_EP1", // large pipe	
@@ -244,8 +199,6 @@ objectList = [
 // SIGNS
 	"WarfareBunkerSign", // American flag sign
 	"Land_GuardShed", // small guard shed
-// TENTS
-	"MASH", // medical tents
 // FOOD AND DRINKS
 	"Land_Sacks_goods_F", // food
 	"Land_stand_small_EP1", // food
@@ -261,9 +214,60 @@ objectList = [
 // CARGO CRATES
 	"Fort_Crate_wood", // small wooden crate
 	"Misc_cargo_cont_tiny", // blue/grey metal crate
-	"Land_CargoBox_V1_F" // Arma 3 cargo crate
-			];
-                                         
+	"Land_CargoBox_V1_F"]; // Arma 3 cargo crate
+objectTier1 = [
+// LADDERS
+	// "Land_ladder_half_EP1",
+	// "Land_ladderEP1",	
+	"Land_ladder_half",
+	"Land_ladder",			
+	"Land_leseni2x", // two story scaffolding
+	"Land_leseni4x", // four story scaffolding
+	"Land_Misc_Scaffolding",
+	"Land_Climbing_Obstacle", // two side climbing
+// NESTS
+	"Land_fortified_nest_small_EP1",
+	"Land_fortified_nest_small",
+// CAMO NETS
+	"Land_CamoNet_NATO",
+// "Land_CamoNet_NATO_EP1",
+	"Land_CamoNetB_EAST_EP1",
+	"Land_CamoNetVar_EAST_EP1",
+// HESCO Large
+	"Base_WarfareBBarrier10xTall",
+	"Base_WarfareBBarrier10x",
+	"Base_WarfareBBarrier5x"
+];
+// Bunkers and Large Items
+objectTier2 = [
+// DIRTS
+	"Dirtmount_EP1", // bumpy dirt hump
+	"Land_Dirthump01_EP1",
+	"Land_Dirthump02_EP1",
+	"Land_Dirthump03_EP1",
+	// "Land_Dirthump01",
+	// "Land_Dirthump02",
+	// "Land_Dirthump03",
+	// "HumpsDirt", // bumpy dirt hump		
+// BUNKERS			
+	"Land_Fort_Watchtower_EP1", //bunker tower
+	"Land_Fort_Watchtower",
+// BAGFENCE			
+	"Land_fort_bagfence_long",
+	"Land_fort_bagfence_round",
+	"Land_fort_bagfence_corner",
+	"Land_BagFenceLong",
+	"Land_BagFenceEnd",
+	"Land_BagFenceRound",
+	"Land_BagFenceShort"
+];	
+// Bunkers with floor
+objectTier3 = [ 
+	"WarfareBDepot",
+	"WarfareBCamp",
+	"Land_fortified_nest_big",
+	"MASH" // medical tent
+];
 //Object List - Random Spawns.
 staticWeaponsList = [
 // Machine Guns

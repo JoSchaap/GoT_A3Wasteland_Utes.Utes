@@ -3,7 +3,7 @@ class Mission
 {
 	addOns[]=
 	{
-		"a3_map_stratis",
+		"utes",
 		"a3_air_f_mh9",
 		"a3_air_f_ka60",
 		"A3_Weapons_F",
@@ -33,11 +33,8 @@ class Mission
 		"cacharacters2",
 		"cacharacters_pmc",
 		"CAAir",
-		"caweapons_baf",
 		"caweapons_ammoboxes",
-		"CAAir_E_AH6J",
-		"caair_e_ch_47f",
-		"caair_e_mi8"
+		"CAAir_E_AH6J"
 	};
 	addOnsAuto[]=
 	{
@@ -60,11 +57,8 @@ class Mission
 		"ind_tank",
 		"castructures_e_mil",
 		"castructures_castle",
-		"caweapons_baf",
 		"caweapons_ammoboxes",
-		"CAAir_E_AH6J",
-		"caair_e_ch_47f",
-		"caair_e_mi8"
+		"CAAir_E_AH6J"
 	};
 	randomSeed=14957468;
 	class Intel
@@ -720,7 +714,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=52;
+		items=50;
 		class Item0
 		{
 			position[]={3771.5801,54.019585,3889.8601};
@@ -1254,31 +1248,31 @@ class Mission
 		};
 		class Item44
 		{
-			position[]={2861.6038,69.197449,3849.9932};
+			position[]={3740.6296,52.032986,3969.5088};
 			id=101;
 			side="EMPTY";
-			vehicle="BAF_BasicWeapons";
+			vehicle="USSpecialWeaponsBox";
 			skill=0.60000002;
 		};
 		class Item45
 		{
-			position[]={2868.4351,69.241417,3850.3186};
+			position[]={3136.8015,28.704075,4360.7617};
 			id=102;
 			side="EMPTY";
-			vehicle="USSpecialWeaponsBox";
+			vehicle="MH6J_EP1";
 			skill=0.60000002;
 		};
 		class Item46
 		{
-			position[]={3740.6296,52.032986,3969.5088};
+			position[]={4239.0884,32.617157,3281.5105};
 			id=103;
 			side="EMPTY";
-			vehicle="USSpecialWeaponsBox";
+			vehicle="MH6J_EP1";
 			skill=0.60000002;
 		};
 		class Item47
 		{
-			position[]={3136.8015,28.704075,4360.7617};
+			position[]={3628.2227,19,3543.2913};
 			id=104;
 			side="EMPTY";
 			vehicle="MH6J_EP1";
@@ -1286,7 +1280,7 @@ class Mission
 		};
 		class Item48
 		{
-			position[]={4228.7896,33.34948,3281.9783};
+			position[]={2582.3816,33.917431,3894.1304};
 			id=105;
 			side="EMPTY";
 			vehicle="MH6J_EP1";
@@ -1294,26 +1288,10 @@ class Mission
 		};
 		class Item49
 		{
-			position[]={3628.2227,19,3543.2913};
+			position[]={3841.687,48.85075,3935.083};
 			id=106;
 			side="EMPTY";
 			vehicle="MH6J_EP1";
-			skill=0.60000002;
-		};
-		class Item50
-		{
-			position[]={2593.2644,33.983498,3889.4458};
-			id=107;
-			side="EMPTY";
-			vehicle="CH_47F_EP1";
-			skill=0.60000002;
-		};
-		class Item51
-		{
-			position[]={3842.5989,49.531475,3929.542};
-			id=108;
-			side="EMPTY";
-			vehicle="Mi17_UN_CDF_EP1";
 			skill=0.60000002;
 		};
 	};
@@ -3859,7 +3837,7 @@ class OutroLoose
 {
 	addOns[]=
 	{
-		"a3_map_stratis"
+		"utes"
 	};
 	randomSeed=2588275;
 	class Intel

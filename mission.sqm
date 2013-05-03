@@ -3,7 +3,7 @@ class Mission
 {
 	addOns[]=
 	{
-		"utes",
+		"a3_map_stratis",
 		"a3_air_f_mh9",
 		"a3_air_f_ka60",
 		"A3_Weapons_F",
@@ -64,14 +64,13 @@ class Mission
 		"caweapons_ammoboxes",
 		"CAAir_E_AH6J",
 		"caair_e_ch_47f",
-		"caair_e_mi8",
-		"utes"
+		"caair_e_mi8"
 	};
 	randomSeed=14957468;
 	class Intel
 	{
-		briefingName="GoT A3Wasteland Utes 1.0 (AiA)";
-		overviewText="GoT Wasteland Utes Sandbox - Originally by 404games - ported to ArmA 3 by JoSchaap and Adanteh";
+		briefingName="GoT Wasteland Utes (AllinArma)";
+		overviewText="GoT 404 Wasteland by 404 and JoSchaap ported to Utes by Adanteh";
 		resistanceWest=0;
 		timeOfChanges=28800;
 		startWeather=0.28999999;
@@ -721,7 +720,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=60;
+		items=52;
 		class Item0
 		{
 			position[]={3771.5801,54.019585,3889.8601};
@@ -844,7 +843,7 @@ class Mission
 		};
 		class Item10
 		{
-			position[]={3781.7407,51.831535,3957.3748};
+			position[]={3786.854,52.079296,3951.644};
 			azimut=72.098213;
 			special="NONE";
 			id=67;
@@ -1271,112 +1270,48 @@ class Mission
 		};
 		class Item46
 		{
-			position[]={3536.1948,19.19899,3708.4941};
+			position[]={3740.6296,52.032986,3969.5088};
 			id=103;
 			side="EMPTY";
-			vehicle="USBasicWeaponsBox";
+			vehicle="USSpecialWeaponsBox";
 			skill=0.60000002;
 		};
 		class Item47
 		{
-			position[]={3536.2112,19.092722,3703.0908};
+			position[]={3136.8015,28.704075,4360.7617};
 			id=104;
 			side="EMPTY";
-			vehicle="BAF_BasicWeapons";
+			vehicle="MH6J_EP1";
 			skill=0.60000002;
 		};
 		class Item48
 		{
-			position[]={3536.1902,18.976471,3697.6472};
+			position[]={4228.7896,33.34948,3281.9783};
 			id=105;
 			side="EMPTY";
-			vehicle="USSpecialWeaponsBox";
+			vehicle="MH6J_EP1";
 			skill=0.60000002;
 		};
 		class Item49
 		{
-			position[]={3740.6296,52.032986,3969.5088};
+			position[]={3628.2227,19,3543.2913};
 			id=106;
 			side="EMPTY";
-			vehicle="USSpecialWeaponsBox";
+			vehicle="MH6J_EP1";
 			skill=0.60000002;
 		};
 		class Item50
 		{
-			position[]={3142.0017,27.946278,4366.6216};
+			position[]={2593.2644,33.983498,3889.4458};
 			id=107;
-			side="EMPTY";
-			vehicle="USSpecialWeaponsBox";
-			skill=0.60000002;
-		};
-		class Item51
-		{
-			position[]={2563.511,33.915031,3860.5659};
-			id=108;
-			side="EMPTY";
-			vehicle="USSpecialWeaponsBox";
-			skill=0.60000002;
-		};
-		class Item52
-		{
-			position[]={2647.8262,36.979752,3755.0522};
-			id=109;
-			side="EMPTY";
-			vehicle="USSpecialWeaponsBox";
-			skill=0.60000002;
-		};
-		class Item53
-		{
-			position[]={2876.7146,53.341656,3809.4077};
-			id=110;
-			side="EMPTY";
-			vehicle="USSpecialWeaponsBox";
-			skill=0.60000002;
-		};
-		class Item54
-		{
-			position[]={3868.9055,28,3326.644};
-			id=111;
-			side="EMPTY";
-			vehicle="USSpecialWeaponsBox";
-			skill=0.60000002;
-		};
-		class Item55
-		{
-			position[]={3737.165,19,3611.7808};
-			id=112;
-			side="EMPTY";
-			vehicle="MH6J_EP1";
-			skill=0.60000002;
-		};
-		class Item56
-		{
-			position[]={3774.5574,19,3612.4368};
-			id=113;
-			side="EMPTY";
-			vehicle="MH6J_EP1";
-			skill=0.60000002;
-		};
-		class Item57
-		{
-			position[]={3812.6047,19,3613.0928};
-			id=114;
-			side="EMPTY";
-			vehicle="MH6J_EP1";
-			skill=0.60000002;
-		};
-		class Item58
-		{
-			position[]={3880.8284,19,3607.8455};
-			id=115;
 			side="EMPTY";
 			vehicle="CH_47F_EP1";
 			skill=0.60000002;
 		};
-		class Item59
+		class Item51
 		{
-			position[]={3937.9001,19,3610.4688};
-			id=116;
+			position[]={3842.5989,49.531475,3929.542};
+			id=108;
 			side="EMPTY";
 			vehicle="Mi17_UN_CDF_EP1";
 			skill=0.60000002;
@@ -1384,7 +1319,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=366;
+		items=371;
 		class Item0
 		{
 			position[]={2952.8225,39,4512.9844};
@@ -3826,6 +3761,46 @@ class Mission
 			type="Empty";
 			colorName="ColorBlack";
 		};
+		class Item366
+		{
+			position[]={4351.6978,30.307667,3552.7744};
+			name="Prigorodkimarker";
+			text="Prigorodki";
+			type="Empty";
+			colorName="ColorBlack";
+		};
+		class Item367
+		{
+			position[]={3683.7056,51.519131,3945.144};
+			name="pulkovomarker";
+			text="Pulkovo";
+			type="Empty";
+			colorName="ColorBlack";
+		};
+		class Item368
+		{
+			position[]={2879.9355,34.223442,4507.0122};
+			name="basemarker";
+			text="Kamenyy Base";
+			type="Empty";
+			colorName="ColorBlack";
+		};
+		class Item369
+		{
+			position[]={2797.3167,72.09726,3852.3694};
+			name="castlemarker";
+			text="Castle";
+			type="Empty";
+			colorName="ColorBlack";
+		};
+		class Item370
+		{
+			position[]={3782.3713,31.449675,3326.9849};
+			name="strelkabasemarker";
+			text="Strelka Base";
+			type="Empty";
+			colorName="ColorBlack";
+		};
 	};
 };
 class Intro
@@ -3884,7 +3859,7 @@ class OutroLoose
 {
 	addOns[]=
 	{
-		"utes"
+		"a3_map_stratis"
 	};
 	randomSeed=2588275;
 	class Intel

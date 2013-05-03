@@ -1,7 +1,7 @@
 /*  
 =========================================================
   Simple Vehicle Respawn Script v1.8
-  by Tophe of  stg ta Ops [OOPS], also thanks too SPJESTER (A404forums)
+  by Tophe of ?stg?ta Ops [OOPS], also thanks too SPJESTER (A404forums)
   
   Put this in the vehicles init line:
   veh = [this] execVM "vehicle.sqf"

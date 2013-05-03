@@ -48,7 +48,7 @@ publicVariable "currentInvites";
 currentStaticHelis = []; // Storage for the heli marker numbers so that we don't spawn wrecks on top of live helis
 
 //Civilian Vehicle List - Random Spawns
-civilianVehicles = [
+vehicleTier0 = [
 	"c_offroad",
 	"B_Quadbike_F", 
 	"O_Quadbike_F",
@@ -85,7 +85,10 @@ civilianVehicles = [
 	"datsun1_civil_3_open",	
 // Offroads
 	"UAZ_Unarmed_TK_CIV_EP1",
-	"BAF_Offroad_W",
+	"BAF_Offroad_W"];
+
+// Trucks - Random Spawns
+vehicleTier1 = [
 // Trucks			
 	"V3S_Civ",
 	"Ikarus",
@@ -94,34 +97,37 @@ civilianVehicles = [
 	"UralCivil2",
 	"Ural_UN_EP1",
 	"Ural_TK_CIV_EP1"];
+	
 
 //Military Vehicle List - Random Spawns
-militaryVehicles = ["c_offroad",
-					// "UAZ_CDF",
-					// "UAZ_INS",
-					// "UAZ_CDF",
-					"UAZ_RU",
-					"SUV_PMC",
-					"MTVR",
-					"BAF_Offroad_W",
-					"HMMWV",					
-					"S1203_ambulance_EP1",
-					"Ural_CDF",
-					"Ural_INS",
-					"LandRover_base",
-					"LandRover_CZ_EP1",
-					"LandRover_TK_CIV_EP1",
-					"UAZ_Unarmed_UN_EP1"];
+vehicleTier2 = [
+	"c_offroad",
+	// "UAZ_CDF",
+	// "UAZ_INS",
+	// "UAZ_CDF",
+	"UAZ_RU",
+	"SUV_PMC",
+	"MTVR",
+	"BAF_Offroad_W",
+	"HMMWV",					
+	"S1203_ambulance_EP1",
+	"Ural_CDF",
+	"Ural_INS",
+	"LandRover_base",
+	"LandRover_CZ_EP1",
+	"LandRover_TK_CIV_EP1",
+	"UAZ_Unarmed_UN_EP1"];
 
 //Armed Military Vehicle List - Random Spawns
-armedMilitaryVehicles = ["B_Hunter_F",
-							"O_Ifrit_F", 
-							// "ArmoredSUV_PMC",
-							"Pickup_PK_GUE",
-							"UAZ_MG_TK_EP1",
-							"LandRover_MG_TK_INS_EP1",
-							"HMMWV_Armored",
-							"GAZ_Vodnik"];
+vehicleTier3 = [
+	"B_Hunter_F",
+	"O_Ifrit_F", 
+	// "ArmoredSUV_PMC",
+	"Pickup_PK_GUE",
+	"UAZ_MG_TK_EP1",
+	"LandRover_MG_TK_INS_EP1",
+	"HMMWV_Armored",
+	"GAZ_Vodnik"];
                             
 //Object List - Random Spawns.
 objectList = [			
@@ -203,10 +209,10 @@ objectList = [
 	"Land_Misc_Scaffolding",
 	"Land_Climbing_Obstacle", // two side climbing
 // CAMO NETS
-	//"Land_CamoNet_NATO",
+	"Land_CamoNet_NATO",
 	// "Land_CamoNet_NATO_EP1",
-	//"Land_CamoNetB_EAST_EP1",
-	//"Land_CamoNetVar_EAST_EP1",			
+	"Land_CamoNetB_EAST_EP1",
+	"Land_CamoNetVar_EAST_EP1",			
 // SEARCHLIGHTS			
 	"SearchLight", 
 	// "SearchLight_CDF",
@@ -226,8 +232,8 @@ objectList = [
 	"Land_prolejzacka", // wooden window training item
 	"Land_WoodenRamp", // small wooden ramp
 // HELI PAD
-	//"HeliHCivil", // heli pad yellow
-	//"HeliH", // heli pad white
+	"HeliHCivil", // heli pad yellow
+	"HeliH", // heli pad white
 	// "HeliHRescue", // heli medevac pad
 
 // MISC			
@@ -254,8 +260,8 @@ objectList = [
 	"Land_Misc_deerstand",
 // CARGO CRATES
 	"Fort_Crate_wood", // small wooden crate
-	"Misc_cargo_cont_tiny" // blue/grey metal crate
-	//"Land_CargoBox_V1_F" // Arma 3 cargo crate
+	"Misc_cargo_cont_tiny", // blue/grey metal crate
+	"Land_CargoBox_V1_F" // Arma 3 cargo crate
 			];
                                          
 //Object List - Random Spawns.
@@ -294,22 +300,22 @@ staticHeliList = ["B_MH9_F",
 vehicleWeapons = [
 //	ARMA 3 WEAPONS
 				// "arifle_SDAR_F",
-				 "arifle_MXM_F",
-				 "arifle_TRG21_F",
-				 "arifle_TRG20_F",
-				 "arifle_MXC_F",
-                 "arifle_MX_SW_F",
-                 "arifle_MX_GL_F",
-                 "arifle_TRG21_GL_F",
-                 "arifle_MX_F",
-                 "arifle_Khaybar_F",
-                 "arifle_Khaybar_C_F",
-                 "arifle_Khaybar_GL_F",
+				// "arifle_MXM_F",
+				// "arifle_TRG21_F",
+				// "arifle_TRG20_F",
+				// "arifle_MXC_F",
+                // "arifle_MX_SW_F",
+                // "arifle_MX_GL_F",
+                // "arifle_TRG21_GL_F",
+                // "arifle_MX_F",
+                // "arifle_Khaybar_F",
+                // "arifle_Khaybar_C_F",
+                // "arifle_Khaybar_GL_F",
                 // "arifle_SDAR_F",
-                 "srifle_EBR_F",
-                 "LMG_Mk200_F",
-                 "hgun_P07_F",
-                 "hgun_Rook40_F",
+                // "srifle_EBR_F",
+                // "LMG_Mk200_F",
+                // "hgun_P07_F",
+                // "hgun_Rook40_F",
 //	RUSSIAN ASSAULT RIFLES
 				"AK_107_GL_kobra",
 				"AK_107_kobra",

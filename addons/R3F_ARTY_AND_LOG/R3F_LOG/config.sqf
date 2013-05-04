@@ -71,7 +71,7 @@ R3F_LOG_CFG_objets_remorquables = [
 	"Land_ConcreteRamp",
 	"RampConcrete",
 	"Land_ConcreteBlock",
-	"Land_Fort_Watchtower",
+	"Land_Fort_Watchtower"
 //	"Land_vez"
 ];
 

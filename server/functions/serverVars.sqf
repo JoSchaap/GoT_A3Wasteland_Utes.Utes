@@ -209,7 +209,7 @@ objectTier0 = [
 	"Barrels", // fuel barrels blue*4
 // TOWERS
 	// "Land_radar_EP1", // High radar tower. Can't climb in Arma3
-	"Land_vez", // Green watchtower					
+	// "Land_vez", // Green watchtower					
 	"Land_Misc_deerstand",
 // CARGO CRATES
 	"Fort_Crate_wood", // small wooden crate

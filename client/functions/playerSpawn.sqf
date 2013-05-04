@@ -52,8 +52,8 @@ if(doKickTeamSwitcher) exitWith {
 	[] spawn {sleep 20; endMission "LOSER";};
 };
 
-//Send player to debug to stop fake spawn locations.
-player setPos [3755.94,7945.76,0.00160313];
+//Send player to debug to stop fake spawn locations. (Inside Aircraft Carrier)
+player setPos [1365.22,1011.76,0.00143528];
 
 titleText ["EEEHHHRRMEEEHGAAAWWWWD!!!", "BLACK OUT", 0.00001];
 

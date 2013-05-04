@@ -9,7 +9,7 @@ if(!X_Server) exitWith {};
 private ["_counter","_pos","_markerName","_marker","_hint","_newpos"];
 _counter = 0;
 
-for "_i" from 1 to 40 step 10 do
+for "_i" from 1 to 20 step 3 do
 {
 	_pos = getMarkerPos format ["objectSpawn_%1", _i];
     _newpos = [_pos, 25, 50, 1, 0, 60 * (pi / 180), 0] call BIS_fnc_findSafePos;

@@ -14,7 +14,7 @@ _nerfBoxes = ["Box_East_Support_F","Box_East_Wps_F","Box_East_WpsSpecial_F","Box
 
 for "_i" from 1 to 110 step 25 do
 {
-	_pos = getMarkerPos format ["Spawn_%1", _i];
+	_pos = getMarkerPos format ["boxSpawn_%1", _i];
     _currBox = _nerfBoxes select (random (count _nerfBoxes - 1));
     _safePos = [_pos, 25, 50, 1, 0, 60 * (pi / 180), 0] call BIS_fnc_findSafePos;
     _boxInstance = createVehicle [_currBox, _safePos,[], 30, "NONE"]; 

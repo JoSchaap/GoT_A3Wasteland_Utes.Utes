@@ -12,9 +12,12 @@ player createDiaryRecord["changelog",
 		[Fixed] - Vehicle Spawns<br/>
 		[Fixed] - Object Spawns<br/>
 		[Fixed] - Vehicle Respawning<br/>
+		[Fixed] - Weapon Box Spawning<br/>
+		[Fixed] - Debug Zone Coordinates<br/>
 		[Removed] - Deprecated function calls<br/>
 		[Changed] - Catagorized vehicles+spawn chances</br>
 		[Changed] - Catagorized objects+spawn chances</br>
+		[Changed] - Weapon+Equipment spawns<br/>
 		[Disabled] - Missions due to incompatability<br/>
 "
 ]

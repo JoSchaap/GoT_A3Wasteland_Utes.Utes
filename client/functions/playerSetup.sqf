@@ -61,8 +61,8 @@ if(str(playerSide) in ["GUER"]) then
 _player addrating 1000000;
 _player switchMove "amovpknlmstpsraswpstdnon_gear";
 
-thirstLevel = 80;
-hungerLevel = 80;
+thirstLevel = 70;
+hungerLevel = 70;
 
 _player setVariable["cmoney",100,true];
 _player setVariable["canfood",1,false];
@@ -72,7 +72,7 @@ _player setVariable["fuel",0,false];
 _player setVariable["repairkits",0,false];
 _player setVariable["fuelFull", 1, false];
 _player setVariable["fuelEmpty", 0, false];
-_player setVariable["spawnBeacon",1,false];
+_player setVariable["spawnBeacon",0,false];
 _player setVariable["camonet",0,false];
 
 [] execVM "client\functions\playerActions.sqf";

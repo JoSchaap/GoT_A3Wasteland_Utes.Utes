@@ -31,13 +31,13 @@ _additionArray1 = _additionArray1 - [_addition1Two];
 _addition1Three = _additionArray1 select (random (count _additionArray1 -1));
 
 //Add guns and magazines, note the Global at the end..
-if (random 1 < 0.90) then { _car addMagazineCargoGlobal [_mag,(random 7)]};
+if (random 1 < 0.90) then { _car addMagazineCargoGlobal [_mag,round(random 7)]};
 if (random 1 < 0.70) then { _car addWeaponCargoGlobal [_weapon,1]};
 if (random 1 < 0.70) then { _car addItemCargoGlobal [_addition0One,(random 1)]};
 if (random 1 < 0.30) then { _car addItemCargoGlobal [_addition0Two,(random 1)]};
-if (random 1 < 0.80) then { _car addMagazineCargoGlobal [_addition1One,(random 2)]};
-if (random 1 < 0.40) then { _car addMagazineCargoGlobal [_addition1Two,(random 2)]};
-if (random 1 < 0.20) then { _car addMagazineCargoGlobal [_addition1Three,(random 2)]};
+if (random 1 < 0.80) then { _car addMagazineCargoGlobal [_addition1One,ceil(random 2)]};
+if (random 1 < 0.50) then { _car addMagazineCargoGlobal [_addition1Two,ceil(random 2)]};
+if (random 1 < 0.20) then { _car addMagazineCargoGlobal [_addition1Three,ceil(random 2)]};
 
 _explosive = vehicleExplosive select (random (count vehicleExplosive - 1));
-if (random 1 < 0.15) then { _car addMagazineCargoGlobal [_explosive,(random 2)]};
+if (random 1 < 0.25) then { _car addMagazineCargoGlobal [_explosive,(random 2)]};

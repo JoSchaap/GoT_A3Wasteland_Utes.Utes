@@ -140,7 +140,7 @@ cityList = [
 		["Town_4",75,"Strelka Base"],			
 		["Town_5",100,"Strelka"],
 		["Town_6",50,"Prigorodki"],
-		["Town_7",75,"Farm Town"],
+		["Town_7",75,"Pulkovo"],
 		["Town_8",40,"Castle"]
 ];
 cityLocations = [];

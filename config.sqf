@@ -142,5 +142,6 @@ cityList = [
 		["Town_6",50,"Prigorodki"],
 		["Town_7",75,"Pulkovo"],
 		["Town_8",40,"Castle"]
+		// ["Town_git9",80,"Ceska"]
 ];
 cityLocations = [];

@@ -1,15 +1,13 @@
     //Random weapons and items spawning script for wasteland missions.
-    //Author : Ed!
+    //Author : Ed! + [GoT] JoSchaap
 
     _odd1 = 50;       //The odds that a building is selected to place loot.
     _odd2 = 20;       //The odds that the selected building's spots will have loot(almost like odds per room).
-    _itemtoweaponratio = 55;    //The chances of an item like food,money etc. will spawn instead of a weapon.
+    _itemtoweaponratio = 45;    //The chances of an item like food,money etc. will spawn instead of a weapon.
     randomweaponspawnminmoney = 50;  //The minimum amount of money that can spawn.
     randomweaponspawnmaxmoney = 200; //The maximum amount of money that can spawn.
-    randomweapontestint = 0.01;   //Sets the intervals in which weaponpositions are tested. (Lower = slower, but more accurate. Higher = faster, but less accurate.)
+    randomweapontestint = 0.03;   //Sets the intervals in which weaponpositions are tested. (Lower = slower, but more accurate. Higher = faster, but less accurate.)
 
-
-    randomweapon_weaponlist = vehicleWeapons;
 
     randomweapon_itemlist = [
     "EvMoney",      //Money
@@ -37,16 +35,11 @@
 
     randomweaponspawnweapon = {
      _position = _this;
-     _selectedgroup = (floor(random(count randomweapon_weaponlist)));
-     _weapon = randomweapon_weaponlist select _selectedgroup select 0;
+     _weapon = vehicleWeapons select (random (count vehicleWeapons - 1));
      _weaponholder = createVehicle ["WeaponHolder", _position, [], 0, "CAN_COLLIDE"];
      _weaponholder addWeaponCargoGlobal [_weapon, 1];
-     if((count((randomweapon_weaponlist) select _selectedgroup)) > 1) then {
-     for[{_rm = 0}, {_rm < (2 + floor(random(3)))}, {_rm = _rm + 1}] do {
-     _mag = randomweapon_weaponlist select _selectedgroup select ((floor(random((count(randomweapon_weaponlist select _selectedgroup) - 1)))) + 1);
-     _weaponholder addMagazineCargoGlobal [_mag, 1]; 
-     };
-     };
+     _mag = (getArray (configFile >> "Cfgweapons" >> _weapon >> "magazines")) select 0;
+     _weaponholder addMagazineCargoGlobal [_mag, 2]; 
      _weaponholder setPos _position;
     };
 

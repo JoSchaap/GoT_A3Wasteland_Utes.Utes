@@ -50,7 +50,7 @@
      _weaponholder = createVehicle ["WeaponHolder", _position, [], 0, "CAN_COLLIDE"];
      _weaponholder addWeaponCargoGlobal [_weapon, 1];
      if((count((randomweapon_weaponlist) select _selectedgroup)) > 1) then {
-     ffor[{_rm = 0}, {_rm < (2 + floor(random(3)))}, {_rm = _rm + 1}] do {
+     for[{_rm = 0}, {_rm < (2 + floor(random(3)))}, {_rm = _rm + 1}] do {
      _mag = randomweapon_weaponlist select _selectedgroup select ((floor(random((count(randomweapon_weaponlist select _selectedgroup) - 1)))) + 1);
      _weaponholder addMagazineCargoGlobal [_mag, 1]; 
      };

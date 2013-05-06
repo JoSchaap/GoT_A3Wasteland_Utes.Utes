@@ -64,7 +64,7 @@ randomweapon_weaponlist = [
 ["g36_c_sd_eotech","30Rnd_556x45_G36"],
 ["mp5a5","30rnd_9x19_MP5"],
 ["mp5sd","30rnd_9x19_MP5SD"],
-["MG36_camo","100Rnd_556x45_BetaCMag"],
+//["MG36_camo","100Rnd_556x45_BetaCMag"],
 //["m249","200Rnd_556x45_M249"],
 //["m240","100Rnd_762x51_M240"],
 //["mk_48","100Rnd_762x51_M240"],
@@ -88,7 +88,7 @@ randomweapon_itemlist = [
 "EvMoney",                                              //Money
 "Land_Bucket_F",                              //Water
 "Can_small",                                 //Food
-"Fuel_can",                                             //Fuel
+//"Fuel_can",                                             //Fuel
 "Suitcase",                                             //Repair kit
 "CZ_VestPouch_EP1"                              //Medic kit
 ];

@@ -20,8 +20,14 @@ _serverCompiledScripts = [] execVM "server\functions\serverCompile.sqf";
 [] execVM "server\functions\serverTimeSync.sqf";
 waitUntil{scriptDone _serverCompiledScripts};
 
-
 diag_log format["WASTELAND SERVER - Server CompILe Finished"];
+
+if (buildingsloot == 1) then {
+	diag_log  format["GOT WASTELAND - Placing loot in buildings"];
+	_lootspawnz = [] execVM "server\spawning\BuildingsLoot.sqf";
+	waitUntil{scriptdone _lootspawnz};
+	diag_log  format["GOT WASTELAND - Done placing loot in buildings"];
+};
 
 #ifdef __DEBUG__
 #else
@@ -38,13 +44,6 @@ if (serverSpawning == 1) then {
 	waitUntil{sleep 0.1; scriptDone _boxSpawn};
     _heliSpawn = [] ExecVM "server\functions\staticHeliSpawning.sqf";
     waitUntil{sleep 0.1; scriptDone _heliSpawn};
-};
-
-if (buildingsloot == 1) then {
-	diag_log  format["GOT WASTELAND - Placing loot in buildings"];
-	_lootspawnz = [] execVM "server\spawning\BuildingsLoot.sqf";
-	waitUntil{scriptdone _lootspawnz};
-	diag_log  format["GOT WASTELAND - Done placing loot in buildings"];
 };
 
 #endif

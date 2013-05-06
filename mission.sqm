@@ -79,8 +79,8 @@ class Mission
 	randomSeed=14957468;
 	class Intel
 	{
-		briefingName="GoT Wasteland Utes (AllinArma)";
-		overviewText="GoT 404 Wasteland by 404 and JoSchaap ported to Utes by Adanteh";
+		briefingName="GoT A3Wasteland Utes 1.0 (AiA)";
+		overviewText="GoT Wasteland Utes Sandbox - Originally by 404games - ported to ArmA 3 by JoSchaap and Adanteh";
 		resistanceWest=0;
 		timeOfChanges=28800;
 		startWeather=0.28999999;

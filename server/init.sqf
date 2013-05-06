@@ -9,6 +9,7 @@ if(!X_Server) exitWith {};
 
 sideMissions = 1;
 serverSpawning = 1;
+buildingsloot = 1;
 
 //Execute Server Side Scripts.
 [] execVM "server\admins.sqf";
@@ -38,6 +39,14 @@ if (serverSpawning == 1) then {
     _heliSpawn = [] ExecVM "server\functions\staticHeliSpawning.sqf";
     waitUntil{sleep 0.1; scriptDone _heliSpawn};
 };
+
+if (buildingsloot == 1) then {
+	diag_log  format["GOT WASTELAND - Placing loot in buildings"];
+	_lootspawnz = [] execVM "server\spawning\BuildingsLoot.sqf";
+	waitUntil{scriptdone _lootspawnz};
+	diag_log  format["GOT WASTELAND - Done placing loot in buildings"];
+};
+
 #endif
 //Execute Server Missions.
 //	diag_log format["WASTELAND SERVER - Initilizing Missions"];

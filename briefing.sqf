@@ -9,6 +9,7 @@ player createDiaryRecord["changelog",
 "1.0(GoT)",
 "
 <br/>
+		[Added] - Towns/buildings/LHD<br/>
 		[Fixed] - Vehicle Spawns<br/>
 		[Fixed] - Object Spawns<br/>
 		[Fixed] - Vehicle Respawning<br/>

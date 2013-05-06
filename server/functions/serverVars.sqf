@@ -229,10 +229,10 @@ objectTier1 = [
 	"Land_fortified_nest_small_EP1",
 	"Land_fortified_nest_small",
 // CAMO NETS
-	"Land_CamoNet_NATO",
+//	"Land_CamoNet_NATO",
 // "Land_CamoNet_NATO_EP1",
-	"Land_CamoNetB_EAST_EP1",
-	"Land_CamoNetVar_EAST_EP1",
+//	"Land_CamoNetB_EAST_EP1",
+//	"Land_CamoNetVar_EAST_EP1",
 // HESCO Large
 	"Base_WarfareBBarrier10xTall",
 	"Base_WarfareBBarrier10x",

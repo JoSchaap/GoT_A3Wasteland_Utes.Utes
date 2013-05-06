@@ -5,9 +5,9 @@ enableItemsDropping = 0;
 loadScreen = "Loading.jpg";
 class Header
 {
-	gameType=Wasteland;
+	gameType=COOP;
 	minPlayers=1;
-	maxPlayers=65;
+	maxPlayers=55;
 };
 author="Adanteh/JoSchaap (+404Games)";
 OnLoadName = "GoT Wasteland Utes 1.0";

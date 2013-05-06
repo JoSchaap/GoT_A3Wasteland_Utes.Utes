@@ -192,7 +192,7 @@ objectTier0 = [
 	// "HeliH", // heli pad white
 	// "HeliHRescue", // heli medevac pad
 // MISC			
-	"Land_MetalBarrel_F",
+	"Land_MetalBarrel_F", //fuel
 	"Land_Misc_ConcPipeline_EP1", // large pipe	
 	"Land_Campfire_burning",						
 // FLAGS
@@ -214,7 +214,7 @@ objectTier0 = [
 // CARGO CRATES
 	"Fort_Crate_wood", // small wooden crate
 	"Misc_cargo_cont_tiny", // blue/grey metal crate
-	"Land_CargoBox_V1_F"]; // Arma 3 cargo crate
+	// "Land_CargoBox_V1_F"]; // Arma 3 cargo crate
 objectTier1 = [
 // LADDERS
 	// "Land_ladder_half_EP1",
@@ -229,8 +229,8 @@ objectTier1 = [
 	"Land_fortified_nest_small_EP1",
 	"Land_fortified_nest_small",
 // CAMO NETS
-//	"Land_CamoNet_NATO",
-// "Land_CamoNet_NATO_EP1",
+	"Land_CamoNet_NATO",
+// 	"Land_CamoNet_NATO_EP1",
 //	"Land_CamoNetB_EAST_EP1",
 //	"Land_CamoNetVar_EAST_EP1",
 // HESCO Large

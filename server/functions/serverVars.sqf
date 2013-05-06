@@ -214,7 +214,8 @@ objectTier0 = [
 // CARGO CRATES
 	"Fort_Crate_wood", // small wooden crate
 	"Misc_cargo_cont_tiny" // blue/grey metal crate
-	// "Land_CargoBox_V1_F"]; // Arma 3 cargo crate
+	// "Land_CargoBox_V1_F" // Arma 3 cargo crate
+	]; 
 objectTier1 = [
 // LADDERS
 	// "Land_ladder_half_EP1",

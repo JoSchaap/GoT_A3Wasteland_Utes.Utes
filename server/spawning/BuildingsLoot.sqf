@@ -1,45 +1,37 @@
     //Random weapons and items spawning script for wasteland missions.
     //Author : Ed!
 
-    _odd1 = 60;       //The odds that a building is selected to place loot.
-    _odd2 = 30;       //The odds that the selected building's spots will have loot(almost like odds per room).
+    _odd1 = 50;       //The odds that a building is selected to place loot.
+    _odd2 = 20;       //The odds that the selected building's spots will have loot(almost like odds per room).
     _itemtoweaponratio = 55;    //The chances of an item like food,money etc. will spawn instead of a weapon.
     randomweaponspawnminmoney = 50;  //The minimum amount of money that can spawn.
     randomweaponspawnmaxmoney = 200; //The maximum amount of money that can spawn.
     randomweapontestint = 0.01;   //Sets the intervals in which weaponpositions are tested. (Lower = slower, but more accurate. Higher = faster, but less accurate.)
 
 
-    randomweapon_weaponlist = [
-    ["Put","PipeBomb"],
-    ["Put","MineE"],
-    ["Throw","HandGrenade"],
-    ["Throw","SmokeShell"],
-    ["Throw","SmokeShellYellow"],
-    ["Throw","SmokeShellRed"],
-    ["Throw","SmokeShellGreen"],
-    ["Throw","SmokeShellPurple"],
-    ["Throw","SmokeShellBlue"],
-    ["Throw","SmokeShellOrange"],
-    ["NVGoggles"],
-    ["Binocular"],
-    ["Binocular_Vector"]
-    ];
+    randomweapon_weaponlist = vehicleWeapons;
 
     randomweapon_itemlist = [
     "EvMoney",      //Money
     "Land_Teapot_EP1",    //Water
     "Land_Bag_EP1",     //Food
     "Fuel_can",      //Fuel
-    "Suitcase",      //Repair kit
-    "CZ_VestPouch_EP1",    //Medic kit
-    "US_Assault_Pack_EP1",   //Backpack empty
-    "US_Assault_Pack_Ammo_EP1",  //Backpack -  4 30Rnd. STANAG, 2 M203 HE, 1 Smoke Grenade, 1 Smoke Grenade Red
-    "US_Assault_Pack_AmmoSAW_EP1", //Backpack - 3 M249 Mag., 2 M67 Frag Grenade
-    "US_Assault_Pack_Explosives_EP1", //Backpack - 2 mine/2 satchels
-    "US_Patrol_Pack_EP1",   //Backpack empty
-    "US_Patrol_Pack_Ammo_EP1",  //Backpack - 2 10Rnd. M107, 2 M203 HE, 2 M203 Smoke Red, 2 Mk17 Mag., 1 Mk17 SD Mag.
-    "US_Patrol_Pack_Specops_EP1", //Backpack - 1 IR Target Strobe, 2 M67 Frag Grenade, 2 Mk17 Mag., 2 Mk17 SD Mag., 1 Smoke Grenade Red
-    "BAF_AssaultPack_special"  //Backpack - 2 Frag Grenades, 2 AT Mines, 2 Satchels
+    "Zasleh2",
+    "muzzle_snds_H",
+    "muzzle_snds_L",
+    "muzzle_snds_B",
+    "muzzle_snds_H_MG",
+    "optic_Arco",
+    "optic_Hamr",
+    "optic_Aco",
+    "optic_ACO_grn",
+    "optic_Holosight",
+    "acc_flashlight",
+    "acc_pointer_IR",
+    "FirstAidKit",
+    "Binocular",
+    "ItemGPS",
+    "NVGoggles"
     ];
 
 

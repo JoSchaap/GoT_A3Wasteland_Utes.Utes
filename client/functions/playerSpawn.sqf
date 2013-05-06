@@ -53,7 +53,7 @@ if(doKickTeamSwitcher) exitWith {
 };
 
 //Send player to debug to stop fake spawn locations. (Inside Aircraft Carrier)
-player setPos [1365.22,1011.76,10];
+player setPos [1365.22,1011.76,0.00143528];
 
 titleText ["EEEHHHRRMEEEHGAAAWWWWD!!!", "BLACK OUT", 0.00001];
 

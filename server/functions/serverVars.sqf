@@ -213,7 +213,7 @@ objectTier0 = [
 	"Land_Misc_deerstand",
 // CARGO CRATES
 	"Fort_Crate_wood", // small wooden crate
-	"Misc_cargo_cont_tiny", // blue/grey metal crate
+	"Misc_cargo_cont_tiny" // blue/grey metal crate
 	// "Land_CargoBox_V1_F"]; // Arma 3 cargo crate
 objectTier1 = [
 // LADDERS

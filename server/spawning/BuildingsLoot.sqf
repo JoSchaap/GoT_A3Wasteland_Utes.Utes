@@ -1,12 +1,12 @@
     //Random weapons and items spawning script for wasteland missions.
     //Author : Ed!, [GoT] JoSchaap
 
-    _odd1 = 50;       //The odds that a building is selected to place loot.
-    _odd2 = 20;       //The odds that the selected building's spots will have loot(almost like odds per room).
-    _itemtoweaponratio = 35;    //The chances of an item like food,money etc. will spawn instead of a weapon.
+    _odd1 = 75;       //The odds that a building is selected to place loot.
+    _odd2 = 55;       //The odds that the selected building's spots will have loot(almost like odds per room).
+    _itemtoweaponratio = 30;    //The chances of an item like food,money etc. will spawn instead of a weapon.
     randomweaponspawnminmoney = 50;  //The minimum amount of money that can spawn.
     randomweaponspawnmaxmoney = 200; //The maximum amount of money that can spawn.
-    randomweapontestint = 0.02;   //Sets the intervals in which weaponpositions are tested. (Lower = slower, but more accurate. Higher = faster, but less accurate.)
+    randomweapontestint = 0.01;   //Sets the intervals in which weaponpositions are tested. (Lower = slower, but more accurate. Higher = faster, but less accurate.)
 
 
 randomweapon_weaponlist = [
@@ -25,21 +25,21 @@ randomweapon_weaponlist = [
 ["LeeEnfield","10x_303"],
 ["m16a2","30Rnd_556x45_Stanag"],
 ["m1014","8Rnd_B_Beneli_Pellets"],
-//["m24","5Rnd_762x51_M24"],
+["m24","5Rnd_762x51_M24"],
 //["m40a3","5Rnd_762x51_M24"],
 //["m107","10Rnd_127x99_M107"],
 ["m4spr","20Rnd_556x45_Stanag"],
 ["glock17_EP1","17Rnd_9x19_glock17"],
 //["DMR","20Rnd_762x51_DMR"],
 ["m8_carbineGL","30Rnd_556x45_Stanag"],
-["m8_SAW","30Rnd_556x45_Stanag"],
+//["m8_SAW","30Rnd_556x45_Stanag"],
 //["m8_sharpshooter","30Rnd_556x45_Stanag"],
 ["m8_compact","30Rnd_556x45_Stanag"],
 //["BAF_L85A2_UGL_ACOG","30Rnd_556x45_Stanag"],
 ["AA12_PMC","20Rnd_B_AA12_Pellets"],
 ["m8_compact_pmc","30Rnd_556x45_Stanag"],
 //["BAF_L85A2_UGL_Holo","30Rnd_556x45_Stanag"],
-["m8_holo_sd","30Rnd_556x45_Stanag"],
+["m8_holo_sd","30Rnd_556x45_StanagSD"],
 //["BAF_L86A2_ACOG","30Rnd_556x45_Stanag"],
 ["m16a2gl","30Rnd_556x45_Stanag","1Rnd_HE_M203"],
 ["m16a4","30Rnd_556x45_Stanag"],
@@ -56,12 +56,12 @@ randomweapon_weaponlist = [
 ["Sa58V_RCO_EP1","30Rnd_762x39_SA58"],
 ["Sa58V_CCO_EP1","30Rnd_762x39_SA58"],
 ["SCAR_L_STD_HOLO","20Rnd_762x51_SB_SCAR"],
-["M4A1_AIM_SD_camo","30Rnd_556x45_Stanag"],
+["M4A1_AIM_SD_camo","30Rnd_556x45_StanagSD"],
 //["M249_EP1","200Rnd_556x45_M249"],
 ["g36a","30Rnd_556x45_G36"],
 ["g36k","30Rnd_556x45_G36"],
 ["g36c","30Rnd_556x45_G36"],
-["g36_c_sd_eotech","30Rnd_556x45_G36"],
+["g36_c_sd_eotech","30Rnd_556x45_G36SD"],
 ["mp5a5","30rnd_9x19_MP5"],
 ["mp5sd","30rnd_9x19_MP5SD"],
 //["MG36_camo","100Rnd_556x45_BetaCMag"],
@@ -70,7 +70,7 @@ randomweapon_weaponlist = [
 //["mk_48","100Rnd_762x51_M240"],
 //["mg36","100Rnd_556x45_BetaCMag"],
 //["vss_vintorez","20Rnd_9x39_SP5_VSS"],
-//["svd","10Rnd_762x54_SVD"],
+["svd","10Rnd_762x54_SVD"],
 //["pecheneg","100Rnd_762x54_PK"],
 ["UZI_SD_EP1","30Rnd_9x19_UZI_SD"],
 ["UZI_EP1","30Rnd_9x19_UZI"],
@@ -85,12 +85,11 @@ randomweapon_weaponlist = [
 ];
  
 randomweapon_itemlist = [
-"EvMoney",                                              //Money
+"EvMoney",                                    //Money
 "Land_Bucket_F",                              //Water
-"Can_small",                                 //Food
-//"Fuel_can",                                             //Fuel
-"Suitcase",                                             //Repair kit
-"CZ_VestPouch_EP1"                              //Medic kit
+"Can_small",                                  //Food
+"Suitcase",                                   //Repair kit
+"CZ_VestPouch_EP1"                            //Medic kit
 ];
 
 

@@ -140,8 +140,8 @@ class gunshopd {
 		class BuyToCrate: w_RscButton
 		{
 			idc = -1;
-			onButtonClick = "[1] execVM 'client\systems\gunStore\buyGuns.sqf'";
-			text = "Buy to Crate";
+			onButtonClick = "hint 'nope!'";
+			text = "*DISABLED*";
 
 			x = 0.609375 * safezoneW + safezoneX;
 			y = 0.750 * safezoneH + safezoneY;

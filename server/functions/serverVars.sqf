@@ -143,7 +143,7 @@ objectTier0 = [
 // ROADBLOCK
 	"Hedgehog",
 	"Hhedgehog_concrete", // dragon teeth
-	"Hhedgehog_concreateBig", // dragon teeth large
+	"Hhedgehog_concreteBig", // dragon teeth large
 	"Fort_EnvelopeBig", // small dirt hump
 	"Fort_EnvelopeSmall", // small trench
 	// "Fort_Barricade_EP1", // trash baricade

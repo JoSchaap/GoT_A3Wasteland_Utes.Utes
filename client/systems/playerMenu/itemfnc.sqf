@@ -1,4 +1,3 @@
-
 //	@file Version: 1.1
 //	@file Name: itemfnc.sqf
 //	@file Original Author: TAW_Tonic
@@ -122,9 +121,9 @@ switch(_switch) do
 				_playerPos = getPosATL player;
 				player setVariable["camonet",(player getVariable "camonet")-1,true];
 				_dir = getdir player;
-				_deployedCamoNet = "Land_cargo_addon02_V2_F" createVehicle (position player); _deployedCamoNet setPos _playerPos;
+				_deployedCamoNet = "Land_CamoNet_NATO" createVehicle (position player); _deployedCamoNet setPos _playerPos;
 				_deployedCamoNet setDir _dir;
-				hint "You built an improvised roof";
+				hint "You deployed a camonet";
 			};            
             case "spawnBeacon": 
             {
@@ -159,9 +158,9 @@ switch(_switch) do
 			case "canfood": {player setVariable["canfood",(player getVariable "canfood")-1,true]; _temp = "Can_small" createVehicle (position player); _temp setPos [(_pos select 0)+1, _pos select 1, _pos select 2]; _temp setVariable["food",10,true];};
 			case "fuelFull": {player globalChat "YOU CANNOT DROP THIS ITEM!";};
 			case "fuelEmpty": {player globalChat "YOU CANNOT DROP THIS ITEM!";};
-			case "repairkits": {player globalChat "YOU CANNOT DROP THIS ITEM!";};
+			case "repairkits": {player setVariable["repairkits", (player getvariable "repairkits")-1,true]; _temp = "Suitcase" createVehicle (position player); _temp setPos _pos;};
 			case "water": {player setVariable["water", (player getvariable "water")-1,true]; _temp = "Land_Bucket_F" createVehicle (position player); _temp setPos _pos;};
-			case "medkit": {player globalChat "YOU CANNOT DROP THIS ITEM!";};
+			case "medkit": {player setVariable["medkit", (player getvariable "medkit")-1,true]; _temp = "CZ_VestPouch_EP1" createVehicle (position player); _temp setPos _pos;};
             case "spawnBeacon": {
             player setVariable["spawnBeacon", (player getVariable "spawnBeacon")-1,true]; 
             _droppedBeacon = "Satelit" createVehicle (position player);

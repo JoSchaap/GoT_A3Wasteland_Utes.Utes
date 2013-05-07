@@ -1423,7 +1423,7 @@ class Mission
 			vehicle="Land_telek1";
 			lock="UNLOCKED";
 			skill=0.2;
-			init="this setPos [this select 0, this select 1, 0]; this setDir 195.452; doStop this; this setVectorUp [0,0,1];";
+			init="this setPos [3405.6174, 3945.5125, 1.1347]; this setDir 195.452; doStop this; this setVectorUp [0,0,1];";
 		};
 		class Item59
 		{

@@ -19,9 +19,9 @@ if (_haloJA == 3) {
   2 cutText ["HALO jump activated. Open your chute before you hit the ground!", "PLAIN DOWN", 5];
   player setPos [_pos select 0, _pos select 1, 1000]; // Stop the player appearing on the ground for a split second before the HALO
   [player, 1000] exec "ca\air2\halo\data\Scripts\HALO_init.sqs";
+} else {
+  player setPos _pos;
 }
-
-player setPos _pos;
 
 respawnDialogActive = false;
 closeDialog 0;

@@ -99,9 +99,7 @@ if ((_uid in moderators) OR (_uid in administrators) OR (_uid in serverAdministr
 		    case 6: //replenish building loot
 			    {
 			closeDialog 0;
-			if (buildingsloot == 1) then {
-				[] execVM "server\spawning\BuildingsLoot.sqf";
-				};
+			execVM "server\spawning\BuildingsLoot.sqf";
 			    };
 };"
 			};

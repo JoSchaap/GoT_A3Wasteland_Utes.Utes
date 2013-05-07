@@ -21,7 +21,7 @@ if (_haloJA == 3) {
   [player, 1000] exec "ca\air2\halo\data\Scripts\HALO_init.sqs";
 } else {
   player setPos _pos;
-}
+};
 
 respawnDialogActive = false;
 closeDialog 0;

@@ -101,7 +101,6 @@ if ((_uid in moderators) OR (_uid in administrators) OR (_uid in serverAdministr
 			closeDialog 0;
 			execVM "server\spawning\BuildingsLoot.sqf";
 			    };
-};"
 			};
 	    };
 	    case 3: //Debug panel
